@@ -11,12 +11,22 @@
 // alert(result);
 
 //Celsius to Freedom
-var fahrenheit = function(celsius){
-  return celsius * (9/5) + 32
+// var fahrenheit = function(celsius){
+//   return celsius * (9/5) + 32
+// };
+//
+// var celsius = parseInt(prompt("Temp in celsius, please: "));
+//
+// var result = fahrenheit(celsius);
+//
+// alert(result);
+
+//Cooking
+var teaspoon = function(tablespoon){
+  return tablespoon * 3
 };
 
-var celsius = parseInt(prompt("Temp in celsius, please: "));
+var tablespoon = parseInt(prompt("How many tablespoons do you have?"));
+var result = teaspoon(tablespoon);
 
-var result = fahrenheit(celsius);
-
-alert(result);
+alert("You have " + result + " teaspoons.");
