@@ -54,8 +54,6 @@ $(document).ready(function() {
     var result = add(number1, number2);
     $("#output").text(result);
     event.preventDefault();
-    // $("#output").text(result);
-    // event.preventDefault();
   });
   $("button#subtract").click(function (event) {
     var number1 = parseInt($("#input1").val());
@@ -64,28 +62,18 @@ $(document).ready(function() {
     $("#output").text(result);
     event.preventDefault();
   });
-  
+  $("button#multiply").click(function (event) {
+    var number1 = parseInt($("#input1").val());
+    var number2 = parseInt($("#input2").val());
+    var result = multiply(number1, number2);
+    $("#output").text(result);
+    event.preventDefault();
+  });
+  $("button#divide").click(function (event) {
+    var number1 = parseInt($("#input1").val());
+    var number2 = parseInt($("#input2").val());
+    var result = divide(number1, number2);
+    $("#output").text(result);
+    event.preventDefault();
+  });
 });
-  // $("form#calc").submit(function(event) {
-  //   event.preventDefault();
-  //   var number1 = parseInt($("#input1").val());
-  //   var number2 = parseInt($("#input2").val());
-  //   var result = subtract(number1, number2);
-  //   $("#output").text(result);
-  // });
-  //
-  // $("form#calc").submit(function(event) {
-  //   event.preventDefault();
-  //   var number1 = parseInt($("#input1").val());
-  //   var number2 = parseInt($("#input2").val());
-  //   var result = multiply(number1, number2);
-  //   $("#output").text(result);
-  // });
-  //
-  // $("form#calc").submit(function(event) {
-  //   event.preventDefault();
-  //   var number1 = parseInt($("#input1").val());
-  //   var number2 = parseInt($("#input2").val());
-  //   var result = divide(number1, number2);
-  //   $("#output").text(result);
-  // });
